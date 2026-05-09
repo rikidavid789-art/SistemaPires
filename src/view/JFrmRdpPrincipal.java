@@ -113,6 +113,8 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
 
     private void jMnuRdpUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpUsuariosActionPerformed
         // TODO add your handling code here:
+        JDlgRdpUsuarios dialog = new JDlgRdpUsuarios(this, true);
+        dialog.setVisible(true);
     }//GEN-LAST:event_jMnuRdpUsuariosActionPerformed
 
     /**
