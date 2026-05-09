@@ -17,6 +17,8 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
      */
     public JFrmRdpPrincipal() {
         initComponents();
+        setTitle("Loja de Roupas do Rick - Inicio");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -28,7 +30,72 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMnuRdpCadastro = new javax.swing.JMenu();
+        jMnuRdpUsuarios = new javax.swing.JMenuItem();
+        jMnuRdpClientes = new javax.swing.JMenuItem();
+        jMnuRdpFornecedor = new javax.swing.JMenuItem();
+        jMnuRdpProduto = new javax.swing.JMenuItem();
+        jMnuRdpColecoes = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMnuRdpSair = new javax.swing.JMenuItem();
+        jMnuRdpMovimento = new javax.swing.JMenu();
+        jMnuRdpCompras = new javax.swing.JMenuItem();
+        jMnuRdpVendas = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jMnuRdpCadastro.setMnemonic('c');
+        jMnuRdpCadastro.setText("Cadastro");
+
+        jMnuRdpUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuRdpUsuarios.setText("Usuários");
+        jMnuRdpUsuarios.addActionListener(this::jMnuRdpUsuariosActionPerformed);
+        jMnuRdpCadastro.add(jMnuRdpUsuarios);
+
+        jMnuRdpClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
+        jMnuRdpClientes.setText("Clientes");
+        jMnuRdpCadastro.add(jMnuRdpClientes);
+
+        jMnuRdpFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor.png"))); // NOI18N
+        jMnuRdpFornecedor.setText("Fornecedor");
+        jMnuRdpCadastro.add(jMnuRdpFornecedor);
+
+        jMnuRdpProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
+        jMnuRdpProduto.setText("Produto");
+        jMnuRdpCadastro.add(jMnuRdpProduto);
+
+        jMnuRdpColecoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpColecoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/colecoes.jpg"))); // NOI18N
+        jMnuRdpColecoes.setText("Coleções");
+        jMnuRdpCadastro.add(jMnuRdpColecoes);
+        jMnuRdpCadastro.add(jSeparator1);
+
+        jMnuRdpSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
+        jMnuRdpSair.setText("Sair");
+        jMnuRdpCadastro.add(jMnuRdpSair);
+
+        jMenuBar1.add(jMnuRdpCadastro);
+
+        jMnuRdpMovimento.setMnemonic('m');
+        jMnuRdpMovimento.setText("Movimento");
+
+        jMnuRdpCompras.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpCompras.setText("Compras");
+        jMnuRdpMovimento.add(jMnuRdpCompras);
+
+        jMnuRdpVendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMnuRdpVendas.setText("Vendas");
+        jMnuRdpMovimento.add(jMnuRdpVendas);
+
+        jMenuBar1.add(jMnuRdpMovimento);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -38,11 +105,15 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMnuRdpUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpUsuariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuRdpUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +141,17 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMnuRdpCadastro;
+    private javax.swing.JMenuItem jMnuRdpClientes;
+    private javax.swing.JMenuItem jMnuRdpColecoes;
+    private javax.swing.JMenuItem jMnuRdpCompras;
+    private javax.swing.JMenuItem jMnuRdpFornecedor;
+    private javax.swing.JMenu jMnuRdpMovimento;
+    private javax.swing.JMenuItem jMnuRdpProduto;
+    private javax.swing.JMenuItem jMnuRdpSair;
+    private javax.swing.JMenuItem jMnuRdpUsuarios;
+    private javax.swing.JMenuItem jMnuRdpVendas;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 }
