@@ -18,8 +18,54 @@ public class JDlgRdpUsuarios extends javax.swing.JDialog {
     public JDlgRdpUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+            setTitle("Loja de Roupas do Rick - Usuarios");
+            setLocationRelativeTo(null);
+            jTxtRdpCPF.setEnabled(false);
+            jTxtRdpEmail.setEnabled(false);
+            jTxtRdpEndereco.setEnabled(false);
+            jTxtRdpNome.setEnabled(false);
+            jTxtRdpTelefone.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jPwfRdpSenha.setEnabled(false);
+            jBtnRdpCancelar.setEnabled(false);
+            jBtnRdpConfirmar.setEnabled(false);
+            jBtnRdpAlterar.setEnabled(true);
+            jBtnRdpExcluir.setEnabled(true);
+            jBtnRdpIncluir.setEnabled(true);
+            jBtnRdpPesquisar.setEnabled(true);
     }
 
+    public void habilitar(){
+       jTxtRdpCPF.setEnabled(true);
+            jTxtRdpEmail.setEnabled(true);
+            jTxtRdpEndereco.setEnabled(true);
+            jTxtRdpNome.setEnabled(true);
+            jTxtRdpTelefone.setEnabled(true);
+            jCboRdpGenero.setEnabled(true);
+            jPwfRdpSenha.setEnabled(true);
+            jBtnRdpCancelar.setEnabled(true);
+            jBtnRdpConfirmar.setEnabled(true);
+            jBtnRdpAlterar.setEnabled(false);
+            jBtnRdpExcluir.setEnabled(false);
+            jBtnRdpIncluir.setEnabled(false);
+            jBtnRdpPesquisar.setEnabled(false); 
+    }
+    
+    public void desabilitar(){
+        jTxtRdpCPF.setEnabled(false);
+            jTxtRdpEmail.setEnabled(false);
+            jTxtRdpEndereco.setEnabled(false);
+            jTxtRdpNome.setEnabled(false);
+            jTxtRdpTelefone.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jPwfRdpSenha.setEnabled(false);
+            jBtnRdpCancelar.setEnabled(false);
+            jBtnRdpConfirmar.setEnabled(false);
+            jBtnRdpAlterar.setEnabled(true);
+            jBtnRdpExcluir.setEnabled(true);
+            jBtnRdpIncluir.setEnabled(true);
+            jBtnRdpPesquisar.setEnabled(true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -72,18 +118,22 @@ public class JDlgRdpUsuarios extends javax.swing.JDialog {
 
         jBtnRdpIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
         jBtnRdpIncluir.setText("Incluir");
+        jBtnRdpIncluir.addActionListener(this::jBtnRdpIncluirActionPerformed);
 
         jBtnRdpAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
         jBtnRdpAlterar.setText("Alterar");
 
         jBtnRdpExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
         jBtnRdpExcluir.setText("Excluir");
+        jBtnRdpExcluir.addActionListener(this::jBtnRdpExcluirActionPerformed);
 
         jBtnRdpConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
         jBtnRdpConfirmar.setText("Confirmar");
+        jBtnRdpConfirmar.addActionListener(this::jBtnRdpConfirmarActionPerformed);
 
         jBtnRdpCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
         jBtnRdpCancelar.setText("Cancelar");
+        jBtnRdpCancelar.addActionListener(this::jBtnRdpCancelarActionPerformed);
 
         jBtnRdpPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
         jBtnRdpPesquisar.setText("Pesquisar");
@@ -177,6 +227,26 @@ public class JDlgRdpUsuarios extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnRdpIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpIncluirActionPerformed
+
+    private void jBtnRdpExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpExcluirActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnRdpExcluirActionPerformed
+
+    private void jBtnRdpConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpConfirmarActionPerformed
+
+    private void jBtnRdpCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpCancelarActionPerformed
 
     /**
      * @param args the command line arguments
