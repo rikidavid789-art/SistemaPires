@@ -63,6 +63,7 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         jMnuRdpFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuRdpFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor.png"))); // NOI18N
         jMnuRdpFornecedor.setText("Fornecedor");
+        jMnuRdpFornecedor.addActionListener(this::jMnuRdpFornecedorActionPerformed);
         jMnuRdpCadastro.add(jMnuRdpFornecedor);
 
         jMnuRdpProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -137,6 +138,12 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
          JDlgRdpClientes dialog = new JDlgRdpClientes(this, true);
         dialog.setVisible(true);
     }//GEN-LAST:event_jMnuRdpClientesActionPerformed
+
+    private void jMnuRdpFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpFornecedorActionPerformed
+        // TODO add your handling code here:
+        JDlgRdpFornecedor dialog = new JDlgRdpFornecedor(this, true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuRdpFornecedorActionPerformed
 
     /**
      * @param args the command line arguments
