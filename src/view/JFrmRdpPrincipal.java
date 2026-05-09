@@ -57,6 +57,7 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         jMnuRdpClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuRdpClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuRdpClientes.setText("Clientes");
+        jMnuRdpClientes.addActionListener(this::jMnuRdpClientesActionPerformed);
         jMnuRdpCadastro.add(jMnuRdpClientes);
 
         jMnuRdpFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -73,6 +74,7 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         jMnuRdpColecoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuRdpColecoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/colecoes.jpg"))); // NOI18N
         jMnuRdpColecoes.setText("Coleções");
+        jMnuRdpColecoes.addActionListener(this::jMnuRdpColecoesActionPerformed);
         jMnuRdpCadastro.add(jMnuRdpColecoes);
         jMnuRdpCadastro.add(jSeparator1);
 
@@ -123,6 +125,18 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
           JDlgRdpProdutos dialog = new JDlgRdpProdutos(this, true);
         dialog.setVisible(true);
     }//GEN-LAST:event_jMnuRdpProdutoActionPerformed
+
+    private void jMnuRdpColecoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpColecoesActionPerformed
+        // TODO add your handling code here:
+           JDlgRdpColecoes dialog = new JDlgRdpColecoes(this, true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuRdpColecoesActionPerformed
+
+    private void jMnuRdpClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpClientesActionPerformed
+        // TODO add your handling code here:
+         JDlgRdpClientes dialog = new JDlgRdpClientes(this, true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuRdpClientesActionPerformed
 
     /**
      * @param args the command line arguments

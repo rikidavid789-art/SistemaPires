@@ -18,7 +18,78 @@ public class JDlgRdpClientes extends javax.swing.JDialog {
     public JDlgRdpClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Loja de Roupas do Rick - Clientes");
+            setLocationRelativeTo(null);
+            jTxtRdpBairro.setEnabled(false);
+            jTxtRdpCep.setEnabled(false);
+            jTxtRdpCidade.setEnabled(false);
+            jTxtRdpCpf.setEnabled(false);
+            jTxtRdpDataCadastro.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jTxtRdpEmail.setEnabled(false);
+            jTxtRdpId.setEnabled(false);
+            jTxtRdpNome.setEnabled(false);
+            jTxtRdpNumero.setEnabled(false);
+            jTxtRdpRua.setEnabled(false);
+            jTxtRdpNumero.setEnabled(false);
+            jTxtRdpTelefone.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jChbRdpStatus.setEnabled(false);
+            jBtnRdpCancelar.setEnabled(false);
+            jBtnRdpConfirmar.setEnabled(false);
+            jBtnRdpAlterar.setEnabled(true);
+            jBtnRdpExcluir.setEnabled(true);
+            jBtnRdpIncluir.setEnabled(true);
+            jBtnRdpPesquisar.setEnabled(true);
     }
+    
+       public void habilitar(){
+               jTxtRdpBairro.setEnabled(true);
+            jTxtRdpCep.setEnabled(true);
+            jTxtRdpCidade.setEnabled(true);
+            jTxtRdpCpf.setEnabled(true);
+            jTxtRdpDataCadastro.setEnabled(true);
+            jCboRdpGenero.setEnabled(true);
+            jTxtRdpEmail.setEnabled(true);
+            jTxtRdpId.setEnabled(true);
+            jTxtRdpNome.setEnabled(true);
+            jTxtRdpNumero.setEnabled(true);
+            jTxtRdpRua.setEnabled(true);
+            jTxtRdpNumero.setEnabled(true);
+            jTxtRdpTelefone.setEnabled(true);
+            jCboRdpGenero.setEnabled(true);
+            jChbRdpStatus.setEnabled(true);
+            jBtnRdpCancelar.setEnabled(true);
+            jBtnRdpConfirmar.setEnabled(true);
+            jBtnRdpAlterar.setEnabled(false);
+            jBtnRdpExcluir.setEnabled(false);
+            jBtnRdpIncluir.setEnabled(false);
+            jBtnRdpPesquisar.setEnabled(false); 
+       }
+       
+        public void desabilitar(){
+                jTxtRdpBairro.setEnabled(false);
+            jTxtRdpCep.setEnabled(false);
+            jTxtRdpCidade.setEnabled(false);
+            jTxtRdpCpf.setEnabled(false);
+            jTxtRdpDataCadastro.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jTxtRdpEmail.setEnabled(false);
+            jTxtRdpId.setEnabled(false);
+            jTxtRdpNome.setEnabled(false);
+            jTxtRdpNumero.setEnabled(false);
+            jTxtRdpRua.setEnabled(false);
+            jTxtRdpNumero.setEnabled(false);
+            jTxtRdpTelefone.setEnabled(false);
+            jCboRdpGenero.setEnabled(false);
+            jChbRdpStatus.setEnabled(false);
+            jBtnRdpCancelar.setEnabled(false);
+            jBtnRdpConfirmar.setEnabled(false);
+            jBtnRdpAlterar.setEnabled(true);
+            jBtnRdpExcluir.setEnabled(true);
+            jBtnRdpIncluir.setEnabled(true);
+            jBtnRdpPesquisar.setEnabled(true);
+         }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,21 +100,270 @@ public class JDlgRdpClientes extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jTxtRdpId = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTxtRdpNome = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTxtRdpCpf = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTxtRdpDataNascimento = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTxtRdpTelefone = new javax.swing.JTextField();
+        jTxtRdpEmail = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTxtRdpCep = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jTxtRdpRua = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jTxtRdpNumero = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTxtRdpBairro = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTxtRdpCidade = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jTxtRdpEstado = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jTxtRdpDataCadastro = new javax.swing.JTextField();
+        jCboRdpGenero = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
+        jChbRdpStatus = new javax.swing.JCheckBox();
+        jBtnRdpIncluir = new javax.swing.JButton();
+        jBtnRdpAlterar = new javax.swing.JButton();
+        jBtnRdpExcluir = new javax.swing.JButton();
+        jBtnRdpConfirmar = new javax.swing.JButton();
+        jBtnRdpCancelar = new javax.swing.JButton();
+        jBtnRdpPesquisar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jLabel1.setText("ID");
+
+        jLabel2.setText("Nome");
+
+        jLabel3.setText("CPF");
+
+        jLabel4.setText("Data de Nascimento");
+
+        jLabel5.setText("Telefone");
+
+        jLabel6.setText("Email");
+
+        jLabel7.setText("CEP");
+
+        jLabel8.setText("Rua");
+
+        jLabel9.setText("Número");
+
+        jLabel10.setText("Bairro");
+
+        jLabel11.setText("Cidade");
+
+        jLabel12.setText("Estado");
+
+        jLabel13.setText("Data do Cadastro");
+
+        jCboRdpGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel14.setText("Genêro");
+
+        jChbRdpStatus.setText("Ativo");
+
+        jBtnRdpIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnRdpIncluir.setText("Incluir");
+        jBtnRdpIncluir.addActionListener(this::jBtnRdpIncluirActionPerformed);
+
+        jBtnRdpAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnRdpAlterar.setText("Alterar");
+
+        jBtnRdpExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnRdpExcluir.setText("Excluir");
+        jBtnRdpExcluir.addActionListener(this::jBtnRdpExcluirActionPerformed);
+
+        jBtnRdpConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnRdpConfirmar.setText("Confirmar");
+        jBtnRdpConfirmar.addActionListener(this::jBtnRdpConfirmarActionPerformed);
+
+        jBtnRdpCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnRdpCancelar.setText("Cancelar");
+        jBtnRdpCancelar.addActionListener(this::jBtnRdpCancelarActionPerformed);
+
+        jBtnRdpPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnRdpPesquisar.setText("Pesquisar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTxtRdpRua, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTxtRdpTelefone, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jTxtRdpId, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jTxtRdpNome, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTxtRdpCpf, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
+                                            .addComponent(jTxtRdpEmail))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jTxtRdpDataNascimento)
+                                            .addComponent(jTxtRdpCep)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTxtRdpNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTxtRdpBairro, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTxtRdpCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel1)
+                                        .addGap(29, 29, 29)
+                                        .addComponent(jLabel2)
+                                        .addGap(161, 161, 161)
+                                        .addComponent(jLabel3)
+                                        .addGap(163, 163, 163)
+                                        .addComponent(jLabel4))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel5)
+                                        .addGap(189, 189, 189)
+                                        .addComponent(jLabel6)
+                                        .addGap(153, 153, 153)
+                                        .addComponent(jLabel7))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addGap(215, 215, 215)
+                                        .addComponent(jLabel9)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel10)
+                                        .addGap(109, 109, 109)
+                                        .addComponent(jLabel11))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel12)
+                                                .addGap(27, 27, 27)
+                                                .addComponent(jLabel13)
+                                                .addGap(82, 82, 82))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jTxtRdpEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jTxtRdpDataCadastro)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel14)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jCboRdpGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jChbRdpStatus)))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jBtnRdpIncluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnRdpAlterar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnRdpExcluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnRdpConfirmar, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnRdpCancelar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnRdpPesquisar)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtRdpId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtRdpTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtRdpRua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpBairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtRdpEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtRdpDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCboRdpGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jChbRdpStatus))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnRdpIncluir)
+                    .addComponent(jBtnRdpAlterar)
+                    .addComponent(jBtnRdpExcluir)
+                    .addComponent(jBtnRdpConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtnRdpCancelar)
+                    .addComponent(jBtnRdpPesquisar))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBtnRdpIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpIncluirActionPerformed
+
+    private void jBtnRdpExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpExcluirActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnRdpExcluirActionPerformed
+
+    private void jBtnRdpConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpConfirmarActionPerformed
+
+    private void jBtnRdpCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRdpCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnRdpCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -83,5 +403,40 @@ public class JDlgRdpClientes extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBtnRdpAlterar;
+    private javax.swing.JButton jBtnRdpCancelar;
+    private javax.swing.JButton jBtnRdpConfirmar;
+    private javax.swing.JButton jBtnRdpExcluir;
+    private javax.swing.JButton jBtnRdpIncluir;
+    private javax.swing.JButton jBtnRdpPesquisar;
+    private javax.swing.JComboBox<String> jCboRdpGenero;
+    private javax.swing.JCheckBox jChbRdpStatus;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField jTxtRdpBairro;
+    private javax.swing.JTextField jTxtRdpCep;
+    private javax.swing.JTextField jTxtRdpCidade;
+    private javax.swing.JTextField jTxtRdpCpf;
+    private javax.swing.JTextField jTxtRdpDataCadastro;
+    private javax.swing.JTextField jTxtRdpDataNascimento;
+    private javax.swing.JTextField jTxtRdpEmail;
+    private javax.swing.JTextField jTxtRdpEstado;
+    private javax.swing.JTextField jTxtRdpId;
+    private javax.swing.JTextField jTxtRdpNome;
+    private javax.swing.JTextField jTxtRdpNumero;
+    private javax.swing.JTextField jTxtRdpRua;
+    private javax.swing.JTextField jTxtRdpTelefone;
     // End of variables declaration//GEN-END:variables
 }
