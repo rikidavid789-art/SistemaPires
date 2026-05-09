@@ -35,7 +35,7 @@ public class JDlgRdpProdutos extends javax.swing.JDialog {
             jBtnRdpPesquisar.setEnabled(true);
         
     }
-    
+        
       public void habilitar(){
             jTxtRdpCategoria.setEnabled(true);
             jTxtRdpCodigoProduto.setEnabled(true);

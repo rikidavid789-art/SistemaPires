@@ -67,6 +67,7 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         jMnuRdpProduto.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuRdpProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuRdpProduto.setText("Produto");
+        jMnuRdpProduto.addActionListener(this::jMnuRdpProdutoActionPerformed);
         jMnuRdpCadastro.add(jMnuRdpProduto);
 
         jMnuRdpColecoes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -116,6 +117,12 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         JDlgRdpUsuarios dialog = new JDlgRdpUsuarios(this, true);
         dialog.setVisible(true);
     }//GEN-LAST:event_jMnuRdpUsuariosActionPerformed
+
+    private void jMnuRdpProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpProdutoActionPerformed
+        // TODO add your handling code here:
+          JDlgRdpProdutos dialog = new JDlgRdpProdutos(this, true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jMnuRdpProdutoActionPerformed
 
     /**
      * @param args the command line arguments
