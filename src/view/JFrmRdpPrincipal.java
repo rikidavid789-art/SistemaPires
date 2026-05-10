@@ -82,6 +82,7 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         jMnuRdpSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuRdpSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); // NOI18N
         jMnuRdpSair.setText("Sair");
+        jMnuRdpSair.addActionListener(this::jMnuRdpSairActionPerformed);
         jMnuRdpCadastro.add(jMnuRdpSair);
 
         jMenuBar1.add(jMnuRdpCadastro);
@@ -144,6 +145,11 @@ public class JFrmRdpPrincipal extends javax.swing.JFrame {
         JDlgRdpFornecedor dialog = new JDlgRdpFornecedor(this, true);
         dialog.setVisible(true);
     }//GEN-LAST:event_jMnuRdpFornecedorActionPerformed
+
+    private void jMnuRdpSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuRdpSairActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jMnuRdpSairActionPerformed
 
     /**
      * @param args the command line arguments

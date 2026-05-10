@@ -4,17 +4,16 @@
  */
 package sistemapires;
 
-/**
- *
- * @author rikiz
- */
+import view.JfrmRdpLogin;
+
 public class SistemaPires {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Isso vai abrir a sua tela de login
+        new JfrmRdpLogin().setVisible(true);
     }
     
 }
