@@ -12,7 +12,7 @@ public class SistemaPires {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Isso vai abrir a sua tela de login
+        
         new JfrmRdpLogin().setVisible(true);
     }
     

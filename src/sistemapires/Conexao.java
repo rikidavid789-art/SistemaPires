@@ -11,14 +11,14 @@ public class Conexao {
     public static Connection getConexao() {
         try {
             if (conn == null || conn.isClosed()) {
-                String url = "jdbc:mysql://localhost:3306/sistema_loja"; 
-                String user = "root";
-                String password = ""; 
+            String url = "jdbc:mysql://localhost:3306/sistemapires";
+            String user = "root";
+            String password = ""; 
                 conn = DriverManager.getConnection(url, user, password);
               }
         } catch (SQLException e) {
             System.out.println("Erro ao conectar no banco: " + e.getMessage());
         }
-        return conn;
+        return conn;    
     }
 }
